@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "haze-dimension",
+	"version": "${version}",
+	"name": "Haze Dimension",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Whalefish"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/haze-dimension/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.whalefish.haze.HazeDimension"
+		],
+		"fabric-datagen": [
+			"com.whalefish.haze.HazeDimensionDataGenerator"
+		],
+		"client": [
+			"com.whalefish.haze.HazeDimensionClient"
+		]
+	},
+	"mixins": [
+		"haze-dimension.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
